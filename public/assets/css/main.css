@@ -1,0 +1,63 @@
+#top-menu {
+  background-color: #C8252F; }
+  #top-menu .call, #top-menu .email {
+    text-decoration: none;
+    color: #fff; }
+    #top-menu .call:hover, #top-menu .email:hover {
+      color: #000; }
+  #top-menu .fa-facebook-f, #top-menu .fa-instagram, #top-menu .fa-linkedin-in {
+    color: #fff; }
+    #top-menu .fa-facebook-f:hover, #top-menu .fa-instagram:hover, #top-menu .fa-linkedin-in:hover {
+      color: #000; }
+
+#menu-bar {
+  background-color: #fff;
+  -webkit-box-shadow: 2px 3px 8px #ceced4;
+          box-shadow: 2px 3px 8px #ceced4; }
+  #menu-bar .nav-link {
+    color: #C8252F;
+    font-weight: 500; }
+    #menu-bar .nav-link:hover {
+      color: #000; }
+    #menu-bar .nav-link.active {
+      color: #000;
+      font-weight: 600; }
+
+#corporate-gifts .card {
+  background-color: #fff; }
+  #corporate-gifts .card:hover {
+    -webkit-box-shadow: 2px 3px 8px #ceced4;
+            box-shadow: 2px 3px 8px #ceced4; }
+
+#personalized-gifts {
+  background-color: #c0b5b55e; }
+  #personalized-gifts .card {
+    background-color: #fff; }
+    #personalized-gifts .card:hover {
+      -webkit-box-shadow: 2px 3px 8px #c8c8ca;
+              box-shadow: 2px 3px 8px #c8c8ca; }
+
+#customized-gifts .card {
+  background-color: #fff; }
+  #customized-gifts .card:hover {
+    -webkit-box-shadow: 2px 3px 8px #ceced4;
+            box-shadow: 2px 3px 8px #ceced4; }
+
+#enquiry {
+  background-color: #c0b5b55e; }
+
+#footer {
+  background-color: #524f4f; }
+  #footer ul {
+    color: #fff; }
+    #footer ul li {
+      padding: 5px 0px; }
+      #footer ul li a {
+        color: #fff;
+        text-decoration: none; }
+        #footer ul li a:hover {
+          color: #dc3545; }
+  #footer .social-link {
+    color: #fff; }
+    #footer .social-link:hover {
+      color: #dc3545; }
