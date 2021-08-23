@@ -88,6 +88,42 @@
     }
 }
 
+#header-banner{
+    background: rgba(255,0,0,0.5) url(/shanthas-designs/public/assets/images/bnr-bg.png);
+    height: 150px;
+    background-blend-mode: multiply;
+    .breadcrumb-item {
+        &.active {
+            color: #000;
+        }
+
+        a {
+            color:#C8252F !important;
+            
+        }
+        
+    }
+ 
+      
+}
+
+#mission-vision{
+    .text-center{
+        border: 1px solid orange;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    h2 {
+        color: orange;
+        font-weight: bold;
+    }
+    .fa-bullseye, .fa-eye {
+        color: blue;
+        font-size: 80px;
+    }
+    
+
+}
 
 @media all and (min-width: 992px) {
 	.dropdown-menu li{ position: relative; 	}
