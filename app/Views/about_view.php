@@ -70,6 +70,24 @@
             </div>
         </div>
     </div>
+    <div id="social-connect" class="pt-2 pb-2 pt-md-5 pb-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center pt-2 pb-2">Social Connect</h2>
+                    <div class="text-center">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-telegram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp-square"></i>
+                    <i class="fab fa-spotify"></i>
+                    <i class="fab fa-quora"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <?= $this->endSection(); ?>
 

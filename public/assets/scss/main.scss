@@ -125,6 +125,18 @@
 
 }
 
+#social-connect{
+    h2{
+        color: red;
+    }
+    .fa-facebook-square, .fa-telegram, .fa-youtube, .fa-instagram, .fa-whatsapp-square, .fa-spotify, .fa-quora {
+        font-size: 40px;
+        margin: 5px;
+
+    }
+    
+}
+
 @media all and (min-width: 992px) {
 	.dropdown-menu li{ position: relative; 	}
 	.nav-item .submenu{ 
