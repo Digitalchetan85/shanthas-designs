@@ -54,7 +54,7 @@
                   <a class="nav-link active" aria-current="page" href="<?= base_url(); ?>">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?= base_url(); ?>/about">About Us</a>
+                <a class="nav-link" href="<?= base_url(); ?>/about">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -282,7 +282,23 @@
                 </ul>
             </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?= base_url(); ?>/contact">Contact Us</a>
+                <a class="nav-link" href="<?= base_url(); ?>/contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Other Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Spoken English</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Job Skills Training</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Yoga, Pranayam & Meditation Classes</a></li>
+                </ul>
               </li>
             </ul>
             <!-- <form class="d-flex">
