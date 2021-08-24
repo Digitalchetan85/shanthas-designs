@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-md-4 align-self-center">
                     <div class="text-center text-md-start">
-                        <i class="fas fa-envelope text-white"></i> <a href="mailto:shanthasdesigns@gmail.com" class="email">shanthasdesigns@gmail.com</a>
+                        <i class="fas fa-envelope text-white"></i> <a href="mailto:business@shanthasdesigns.com" class="email">business@shanthasdesigns.com</a>
                     </div>
                 </div>
                 <div class="col-md-4 align-self-center">
@@ -51,7 +51,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="<?= base_url(); ?>">Home</a>
+                  <a class="nav-link" aria-current="page" href="<?= base_url(); ?>">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url(); ?>/about">About</a>

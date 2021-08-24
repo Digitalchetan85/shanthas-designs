@@ -34,11 +34,14 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->get('about', 'Home::about');
-$routes->get('contact', 'Home::contact');
-$routes->get('corporate-giftings', 'CorporateGiftings::index');
-$routes->get('personalised-gifts', 'PersonalisedGifts::index');
-$routes->get('customised-giftings', 'CustomisedGiftings::index');
+$myroutes = [];
+$myroutes ['about'] = 'Home::about';
+$myroutes ['contact'] = 'Home::contact';
+$myroutes ['corporate-giftings'] = 'CorporateGiftings::index';
+$myroutes ['personalised-giftings'] = 'PersonalisedGifts::index';
+$myroutes ['customised-giftings'] = 'CustomisedGiftings::index';
+
+$routes->map($myroutes);
 
 /*
  * --------------------------------------------------------------------

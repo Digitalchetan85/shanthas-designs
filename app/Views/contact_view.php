@@ -36,22 +36,61 @@
                 </div>
                 <div class="col-md-6">
                     <div class="p-3">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Name</label>
+                        <?= form_open(); ?>
+                        <?php if(session()->getTempdata('error')):?>
+                        <div class="alert alert-danger">
+                            <?= session()->getTempdata('error'); ?>
                         </div>
-                        <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                        <?php endif;?>
+                        <?php if(session()->getTempdata('success')):?>
+                        <div class="alert alert-success">
+                            <?= session()->getTempdata('success'); ?>
+                        </div>
+                        <?php endif;?>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="name@example.com">
+                            <label for="name">Name</label>
+                            <?php if(isset($validation)):?>
+                                <?php if($validation->hasError('name')):?>
+                                    <span class="text-danger"><?= $validation->getError('name');?></span>
+                                <?php endif;?>
+                            <?php endif;?>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
+                            <?php if(isset($validation)):?>
+                                <?php if($validation->hasError('email')):?>
+                                    <span class="text-danger"><?= $validation->getError('email');?></span>
+                                <?php endif;?>
+                            <?php endif;?>
                         </div>
-                        <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Password">
+                            <label for="floatingPassword">Phone No.</label>
+                            <?php if(isset($validation)):?>
+                                <?php if($validation->hasError('mobile')):?>
+                                    <span class="text-danger"><?= $validation->getError('mobile');?></span>
+                                <?php endif;?>
+                            <?php endif;?>
                         </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" aria-label="Default select example" id="gifts" name="gifts">
+                                <option selected>Select Category</option>
+                                <option value="Corporate Gifts">Corporate Gifts</option>
+                                <option value="Personalised Gifts">Personalised Gifts</option>
+                                <option value="Customised Gifts">Customised Gifts</option>
+                            </select>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="comment" name="comment" style="height: 100px"></textarea>
+                            <label for="comment">Comments</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <?= form_close(); ?>
                     </div>
                 </div>
             </div>
